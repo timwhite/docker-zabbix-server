@@ -4,6 +4,7 @@ MAINTAINER "Mark Vartanyan <kolypto@gmail.com>"
 
 # Packages: update & install
 ENV DEBCONF_FRONTEND noninteractive
+RUN sudo sed -i "/^# deb.*multiverse/ s/^# //" /etc/apt/sources.list
 RUN apt-get update -qq
 RUN apt-get install -qq -y --no-install-recommends python-pip supervisor
 RUN apt-get install -qq -y --no-install-recommends nginx-full php5-fpm php5-mysql zabbix-server-mysql zabbix-frontend-php snmp-mibs-downloader
