@@ -65,6 +65,7 @@ Things to do at the beginning:
 * Administration > Users, Users: disable guest access (group), setup user accounts & themes
 * Administration > Media types: set up notification methods. For custom alertscripts, see [Custom alertscripts](https://www.zabbix.com/documentation/2.4/manual/config/notifications/media/script)
 * Administration > Users, Users, "Media" tab: set up notification destinations
+* Configuration > Hosts: create a new host and add items, triggers & stuff
 
 TODO
 ----
