@@ -31,6 +31,7 @@ j2 /root/conf/zabbix_server.conf > /etc/zabbix/zabbix_server.conf
     case "$1" in
         # Install tables into MySQL
         setup-db)
+            apt-get update -qq
             apt-get install -qq -y --no-install-recommends mysql-client
             zcat /usr/share/zabbix-server-mysql/{schema,images,data}.sql.gz | mysql $ZABBIX_DB_NAME
             apt-get purge -qq -y mysql-client
