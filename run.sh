@@ -15,7 +15,7 @@ if [ ! -z "$ZABBIX_DB_LINK" ] ; then
 fi
 
 # Templates
-cat <<EOF > /.my.cnf
+cat <<EOF > ~/.my.cnf
 [client]
 user=$ZABBIX_DB_USER
 password=$ZABBIX_DB_PASS
